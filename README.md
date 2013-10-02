@@ -7,22 +7,22 @@ Forked from https://code.google.com/p/pywafo
 Wave Analysis for Fatigue and Oceanography (WAFO) is a toolbox of Python routines for statistical analysis and simulation of random waves and random loads.
 
 Fatigue Analysis
-  Fatigue life prediction for random loads
-  Theoretical density of rainflow cycles
-  Sea modelling
-  Simulation of linear and non-linear Gaussian waves
-  Estimation of seamodels (spectrums)
-  Joint wave height, wave steepness, wave period distributions
+  -Fatigue life prediction for random loads
+  -Theoretical density of rainflow cycles
+  -Sea modelling
+  -Simulation of linear and non-linear Gaussian waves
+  -Estimation of seamodels (spectrums)
+  -Joint wave height, wave steepness, wave period distributions
 Statistics
-  Extreme value analysis
-  Kernel density estimation
-  Hidden markov models
-  Multivariate Gaussian probabilities and expectations
-  Profile log-likelihood analysis
+  -Extreme value analysis
+  -Kernel density estimation
+  -Hidden markov models
+  -Multivariate Gaussian probabilities and expectations
+  -Profile log-likelihood analysis
 Numerics
-  Derivatives (gradient, hessian, jacobian)
-  Integration (Gaussian quadratures (1D and 2D), simpson, Clenshaw-Curtis)
-  Smoothing spline
+  -Derivatives (gradient, hessian, jacobian)
+  -Integration (Gaussian quadratures (1D and 2D), simpson, Clenshaw-Curtis)
+  -Smoothing spline
 
 News
 ----
