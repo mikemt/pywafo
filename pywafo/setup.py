@@ -119,11 +119,11 @@ if __name__=='__main__':
                            f.endswith('.old') or f.endswith('.bak') or 
                            f.endswith('.py') or f.endswith('test') )]
     
-    # executable library on Linux has extension .so
+    # Extension libraries on posix systems
     if os.name == 'posix':
         lib_ext = '.so'
     
-    # extension on Windows is .pyd
+    # Extension libraries on Windows 
     elif os.name == 'nt':
         lib_ext = '.pyd'
     
@@ -132,9 +132,8 @@ if __name__=='__main__':
         raise UserWarning, \
         'Platform not supported:', os.name                       
     
-    libs = [f   for f in os.listdir(os.path.join(root_dir)) if  f.endswith(lib_ext) ]
-#    libs = [f   for f in os.listdir(os.path.join(root_dir)) if  f.endswith('.pyd') ]
-    
+    libs = [f for f in os.listdir(os.path.join(root_dir)) if f.endswith(lib_ext) ]
+
     packagedata = testscripts + datafiles + libs #['c_library.pyd'] #,'disufq1.c','diffsumfunq.pyd','diffsumfunq.pyf','findrfc.c','rfc.pyd','rfc.pyf']
     
     setup(
@@ -143,7 +142,7 @@ if __name__=='__main__':
         author_email='wafo@maths.lth.se',
         description = 'Statistical analysis and simulation of random waves and random loads',
         long_description = info.__doc__,
-    	install_requires = ['numpy>=1.4','numdifftools>=0.2'],
+    	install_requires = ['numpy>=1.4'],
         license = "GPL",
         url='http://code.google.com/p/pywafo/',
     	name = pkg_name,
